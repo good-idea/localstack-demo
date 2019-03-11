@@ -1,6 +1,6 @@
 A basic demo setting up Localstack's S3.
 
-Read the tutorial ~[here](https://dev.to)~ (coming soon).
+Read the tutorial [here](https://dev.to/goodidea/how-to-fake-aws-locally-with-localstack-27me).
 
 Or, spin things up here:
 
