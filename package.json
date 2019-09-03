@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "localstack:init": "npm run localstack:up && npm run localstack:config",
+    "localstack:init": "npm run localstack:up && docker logs localstack_demo -f",
     "localstack:up": "docker-compose up -d",
     "localstack:config": "aws --endpoint-url=http://localhost:4572 s3 mb s3://demo-bucket && aws --endpoint-url=http://localhost:4572 s3api put-bucket-acl --bucket demo-bucket --acl public-read",
     "test-upload": "node test-upload.js"
   },
-  "engines" : {
-    "node" : ">=8.12.0"
+  "engines": {
+    "node": ">=8.12.0"
   },
   "repository": {
     "type": "git",
